@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+
+    margin : 0;
+    padding: 0;
+}
+
+html, body {
+    width : 100vw;
+    height: 100vh;
+
+    background: #000F;
+}
+
+.id-container {
+    width : 100vw;
+    height: 10vh;
+
+
+    border-radius: 12px;
+    border       : #FFFF solid 2px;
+
+    & * {
+        padding: 3px;
+
+        color: #FFFF;
+    }
+}
+
+.connection-container {
+    width : 100vw;
+    height: 10vh;
+
+    margin-top: 10px;
+
+    border-radius: 12px;
+    border       : #FFFF solid 2px;
+
+    display: flex;
+
+    flex-direction : column;
+    flex-wrap      : wrap;
+
+    justify-content: space-around;
+    align-items    : start;
+
+    & * {
+        position: relative;
+
+        left   : 5px;
+        padding: 3px;
+
+        color: #FFFF;
+    }
+
+    .connect-to-user {
+        width: 7vw;
+
+        color: #000F;
+    }
+}
+
+.inbox {
+    width : 100vw;
+    height: calc(80vh - 20px);
+
+    margin-top: 10px;
+
+    border-radius: 12px;
+    border       : #FFFF solid 2px;
+
+    gap: 8px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.message {
+    width : 90vw;
+    height: 8vh;
+
+    border-radius: 12px;
+    border       : #FFFF solid 2px;
+
+    margin: 6px 0 0 6px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    & .user-name, & .message-content {
+        padding: 3px;
+    }
+
+    & .user-name {
+        color: #0F0F;
+    }
+
+    & .message-content {
+        color: #FFFF;
+    }
+}
